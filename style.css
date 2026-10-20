@@ -1,3 +1,7 @@
+:root {
+  --font-family: sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -11,7 +15,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 600px;
+  min-height: 37.5rem;
   width: 100%;
   position: relative;
   top: 0;
@@ -33,7 +37,7 @@ header nav ul {
   padding: 0;
   margin: 0;
   position: static;
-  font-family: sans-serif;
+  font-family: var(--font-family);
   font-size: 14px;
 }
 
@@ -41,7 +45,7 @@ header h2 {
   color: white;
   font-size: clamp(1.5rem, 4vw, 3.125rem);
   text-align: center;
-  margin-top: 60px;
+  margin-block-start: 60px;
   position: static;
 }
 
@@ -55,7 +59,7 @@ header .fa-arrow-down-long {
 
 header h1 {
   color: white;
-  font-family: sans-serif;
+  font-family: var(--font-family);
 }
 
 a {
@@ -92,7 +96,7 @@ a {
   width: 100%;
   max-width: 500px;
   line-height: 1.6;
-  font-family: sans-serif;
+  font-family: var(--font-family);
   font-size: 15px;
   color: hsl(213, 9%, 39%);
 }
@@ -100,13 +104,13 @@ a {
   border: none;
   background: none;
   font-size: 17px;
-  font-family: sans;
   letter-spacing: 1.5px;
   font-weight: 600;
   text-transform: uppercase;
   position: relative;
   bottom: -1.3rem;
   cursor: pointer;
+  font-family: serif;
 }
 
 .cards {
@@ -145,7 +149,7 @@ a {
   right: -12.8rem;
   font-size: 15px;
   color: hsl(167, 40%, 24%);
-  font-family: sans-serif;
+  font-family: var(--font-family);
   line-height: 1.4;
   letter-spacing: 0.3px;
 }
@@ -185,7 +189,7 @@ a {
   right: -11.8rem;
   font-size: 15px;
   color: hsl(167, 40%, 24%);
-  font-family: sans-serif;
+  font-family: var(--font-family);
   line-height: 1.4;
   letter-spacing: 0.3px;
 }
@@ -207,7 +211,7 @@ a {
   text-align: center;
 }
 .testimonials h4 {
-  font-size: clamp(1.2rem, 2.5vw, 1.875rem);
+  font-size: 1.8rem;
   color: hsl(210, 4%, 67%);
 }
 
@@ -240,7 +244,7 @@ a {
 
 .frist h5 {
   font-size: 15px;
-  font-family: sans-serif;
+  font-family: var(--font-family);
   font-weight: 100;
   color: hsl(210, 4%, 67%);
   position: relative;
@@ -249,7 +253,7 @@ a {
 }
 .persons {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   position: static;
 }
@@ -293,7 +297,7 @@ footer {
 }
 footer h5 {
   font-size: 30px;
-  font-family: sans-serif;
+  font-family: var(--font-family);
   color: hsl(167, 40%, 24%);
   font-weight: 620;
   position: relative;
